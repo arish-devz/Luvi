@@ -2,11 +2,10 @@
 
 Luvi is a closed-source Windows desktop workspace for project managers and small teams. The public repository exists only for the Luvi website and release downloads.
 
-## Download
+## Distribution
 
 - Website: https://arish-devz.github.io/Luvi/
-- Latest release: https://github.com/arish-devz/Luvi/releases/latest
-- Windows installer: https://github.com/arish-devz/Luvi/releases/latest/download/Luvi_1.0.2_x64-setup.exe
+- Installer distribution is handled outside public GitHub Releases.
 
 ## What Luvi Does
 
@@ -23,11 +22,11 @@ This repository intentionally contains only:
 - No app source code
 - No installer committed to git
 
-Installer files are distributed only through GitHub Releases.
+Installer files are not committed to git and are not published through GitHub Releases because GitHub automatically exposes source archives for every tagged release.
 
 ## Auto Updates
 
-Luvi uses signed update metadata from the latest GitHub Release. The desktop app checks the release manifest and installs newer signed builds automatically.
+Luvi uses signed update metadata. The desktop app checks the configured update channel and installs newer signed builds automatically.
 
 ## Current Release
 
