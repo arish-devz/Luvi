@@ -1,0 +1,60 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Luvi Demo</title>
+    <meta name="description" content="Interactive Luvi desktop workflow demonstration." />
+    <link rel="stylesheet" href="./styles.css" />
+  </head>
+  <body>
+    <div class="preloader"><img src="./assets/luvi-logo.jpeg" alt="Luvi" /><span></span></div>
+    <header class="site-header">
+      <a class="brand" href="./index.html"><img src="./assets/luvi-logo.jpeg" alt="" /><span>Luvi</span></a>
+      <nav>
+        <a href="./index.html">Home</a><a href="./features.html">Features</a><a class="active" href="./demo.html">Demo</a><a href="./workflow.html">Workflow</a><a href="./security.html">Security</a><a class="nav-cta" href="./download.html">Download</a>
+      </nav>
+    </header>
+    <main>
+      <section class="subhero reveal">
+        <span class="eyebrow">Live product preview</span>
+        <h1>A lightweight walkthrough of Luvi’s core screens.</h1>
+        <p>Use the demo controls to switch between board, chat, inbox, transfer, and settings states. This is a website preview, not the desktop app source.</p>
+      </section>
+      <section class="demo-shell reveal">
+        <div class="demo-controls" role="tablist">
+          <button class="active" data-demo="board">Board</button>
+          <button data-demo="chat">Chat</button>
+          <button data-demo="inbox">Inbox</button>
+          <button data-demo="transfer">Transfer</button>
+          <button data-demo="settings">Settings</button>
+        </div>
+        <div class="demo-stage">
+          <aside class="demo-rail"><img src="./assets/luvi-logo.jpeg" alt="" /><span></span><span></span><span></span><span></span></aside>
+          <section class="demo-panel" data-panel="board">
+            <div class="demo-title"><small>Luvi / Windows App</small><h2>Task board</h2></div>
+            <div class="mini-kanban"><article><b>New task</b><p>Assign owner and priority.</p></article><article><b>Update channel</b><p>Signed installer manifest.</p></article><article><b>Attachment preview</b><p>Image modal is ready.</p></article></div>
+          </section>
+          <section class="demo-panel hidden" data-panel="chat">
+            <div class="demo-title"><small>Luvi Team Chat</small><h2>Project room</h2></div>
+            <div class="conversation"><p><b>Adhi</b> Ship the Windows build.</p><p class="mine"><b>Mohamed</b> Transfer is fixed.</p><p><b>Luvi</b> Attachment preview opened.</p></div>
+          </section>
+          <section class="demo-panel hidden" data-panel="inbox">
+            <div class="demo-title"><small>Inbox</small><h2>Requests and due work</h2></div>
+            <div class="inbox-preview"><article><b>Team request</b><span>Accept or decline inside Luvi.</span></article><article><b>Due work</b><span>Installer verification today.</span></article></div>
+          </section>
+          <section class="demo-panel hidden" data-panel="transfer">
+            <div class="demo-title"><small>Ownership</small><h2>Transfer project</h2></div>
+            <div class="transfer-preview"><span>Old owner</span><i></i><strong>Project + tasks + files + chat</strong><i></i><span>New owner</span></div>
+          </section>
+          <section class="demo-panel hidden" data-panel="settings">
+            <div class="demo-title"><small>Settings</small><h2>Identity and performance</h2></div>
+            <div class="settings-preview"><article>Avatar customization</article><article>Presentation mode</article><article>Low motion mode</article><article>Auto update status</article></div>
+          </section>
+        </div>
+      </section>
+    </main>
+    <footer><span>Luvi</span><a href="./workflow.html">Workflow guide</a><a href="./download.html">Installer access</a></footer>
+    <script src="./script.js"></script>
+  </body>
+</html>

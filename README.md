@@ -1,35 +1,43 @@
 # Luvi
 
-Luvi is a closed-source Windows desktop workspace for project managers and small teams. The public repository exists only for the Luvi website and release downloads.
+Luvi is a closed-source Windows desktop workspace for project managers and small teams.
 
-## Distribution
+This public repository is website-only. It exists to host the Luvi product site through GitHub Pages and does not contain application source code, installer binaries, or release tags.
 
-- Website: https://arish-devz.github.io/Luvi/
-- Installer distribution is handled outside public GitHub Releases.
+## Website
 
-## What Luvi Does
+https://arish-devz.github.io/Luvi/
 
-Luvi brings projects, tasks, team chat, direct messages, file previews, goals, inbox requests, and settings into one desktop app. It is designed around a fast manager workflow: create a project, get a dedicated project chat room, assign work, track goals, and keep team requests inside the app.
+## Pages
 
-## Release Policy
+- Home: product overview and app preview
+- Features: boards, chat, inbox, goals, files, and settings
+- Demo: interactive website-only walkthrough of key Luvi states
+- Workflow: how a team moves through Luvi
+- Security: closed-source and release policy
+- Download: private installer access information
 
-Application source code is not published in this repository.
+## Repository Rules
+
+The Luvi app is closed-source. This repository must never contain:
+
+- React source for the app
+- Rust/Tauri source for the app
+- Build configuration for the private app
+- Installer binaries
+- Release tags that generate public source archives
+
+Installer distribution is handled outside public GitHub Releases because GitHub automatically displays source archives for every tagged release.
+
+## Public Contents
 
 This repository intentionally contains only:
 
-- The public Luvi landing page in `docs/`
-- A short README
-- No app source code
-- No installer committed to git
+- `docs/` static website files
+- website logo asset
+- this README
+- `.gitignore`
 
-Installer files are not committed to git and are not published through GitHub Releases because GitHub automatically exposes source archives for every tagged release.
+## Current App Version
 
-## Auto Updates
-
-Luvi uses signed update metadata. The desktop app checks the configured update channel and installs newer signed builds automatically.
-
-## Current Release
-
-`v1.0.2`
-
-This release includes ownership transfer cleanup, attachment previews, avatar rendering fixes, live chat refresh fixes, and a cleaner project context menu.
+Luvi desktop app: `1.0.2`

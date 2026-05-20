@@ -3,119 +3,79 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Luvi - Premium Team Workspace</title>
-    <meta name="description" content="Luvi is a closed-source Windows desktop workspace for projects, tasks, direct chat, team requests, and signed auto updates." />
+    <title>Luvi - Team Management Workspace</title>
+    <meta name="description" content="Luvi is a closed-source Windows desktop workspace for project boards, team chat, direct messages, goals, inbox requests, and signed updates." />
     <link rel="stylesheet" href="./styles.css" />
   </head>
   <body>
-    <div class="preloader" aria-label="Loading Luvi">
-      <img src="./assets/luvi-logo.jpeg" alt="Luvi" />
-      <span></span>
-    </div>
-
-    <main class="page-shell">
-      <nav class="nav">
-        <a class="brand" href="#top" aria-label="Luvi home">
-          <img src="./assets/luvi-logo.jpeg" alt="" />
-          <span>Luvi</span>
-        </a>
-        <div>
-          <a href="#experience">Experience</a>
-          <a href="#workflow">Workflow</a>
-          <a href="#security">Security</a>
-          <a class="download-link" href="#download">Download</a>
-        </div>
+    <div class="preloader"><img src="./assets/luvi-logo.jpeg" alt="Luvi" /><span></span></div>
+    <header class="site-header">
+      <a class="brand" href="./index.html"><img src="./assets/luvi-logo.jpeg" alt="" /><span>Luvi</span></a>
+      <nav>
+        <a class="active" href="./index.html">Home</a>
+        <a href="./features.html">Features</a>
+        <a href="./demo.html">Demo</a>
+        <a href="./workflow.html">Workflow</a>
+        <a href="./security.html">Security</a>
+        <a class="nav-cta" href="./download.html">Download</a>
       </nav>
+    </header>
 
-      <section id="top" class="hero">
-        <div class="hero-copy">
-          <span class="eyebrow">Luvi Desktop Workspace</span>
-          <h1>Team work, chat, and goals inside one focused Windows app.</h1>
-          <p>Luvi is built for fast project execution: task boards, project chat rooms, direct messages, team requests, file previews, and signed auto updates in a quiet desktop interface.</p>
-          <div class="hero-actions">
-            <a class="primary" href="#download">Download Windows Installer</a>
-            <a class="secondary" href="#security">Release Policy</a>
+    <main>
+      <section class="hero page-grid">
+        <div class="hero-copy reveal">
+          <span class="eyebrow">Closed-source desktop workspace</span>
+          <h1>Run projects, chat, goals, and team requests from one Luvi command center.</h1>
+          <p>Luvi is a fast Windows app for project managers who need one calm place to create work, coordinate people, review priorities, and keep conversations attached to the project.</p>
+          <div class="action-row">
+            <a class="button primary" href="./demo.html">See the demo</a>
+            <a class="button ghost" href="./download.html">Installer access</a>
           </div>
-          <div class="trust-row">
-            <span>Closed-source app</span>
-            <span>Signed updater manifest</span>
-            <span>Windows installer release</span>
+          <div class="signal-row">
+            <span>Project rooms</span>
+            <span>Direct messages</span>
+            <span>Signed updates</span>
           </div>
         </div>
-
-        <div id="experience" class="mockup" aria-label="Luvi app preview">
-          <div class="mock-titlebar">
-            <img src="./assets/luvi-logo.jpeg" alt="" />
-            <span>Luvi</span><i></i><i></i><i></i>
-          </div>
-          <div class="mock-body">
-            <aside>
-              <b></b><b></b><b></b><b></b><b></b>
-            </aside>
-            <section>
-              <div class="mock-header">
-                <div>
-                  <small>Luvi Command Center</small>
-                  <span>Project chat</span>
-                </div>
-                <button>New Project</button>
+        <div class="app-showcase reveal">
+          <div class="window-bar"><img src="./assets/luvi-logo.jpeg" alt="" /><span>Luvi</span><i></i><i></i><i></i></div>
+          <div class="window-body">
+            <aside class="rail-preview"><b></b><b></b><b></b><b></b><b></b></aside>
+            <section class="board-preview">
+              <div class="preview-head"><small>Luvi Command Center</small><strong>Windows App</strong><button>New Project</button></div>
+              <div class="preview-tabs"><span class="on">Tasks</span><span>Timeline</span><span>Files</span><span>Overview</span></div>
+              <div class="preview-kanban">
+                <article><small>New request</small><strong>Installer update channel</strong><span></span></article>
+                <article><small>In progress</small><strong>Team chat polish</strong><span></span></article>
+                <article><small>Complete</small><strong>Attachment previews</strong><span></span></article>
               </div>
-              <div class="mock-chat">
-                <article><strong>Project room</strong><span>Tasks, files, and chat stay connected to the work.</span></article>
-                <article class="right"><strong>Adhi</strong><span>Transfer the Windows app project.</span></article>
-                <article><strong>Mohamed</strong><span>Accepted. Attachment preview is ready.</span></article>
-              </div>
-              <div class="mock-board">
-                <span></span><span></span><span></span>
-              </div>
+              <div class="chat-strip"><b>Mohamed</b><span>Direct chat and project room are active.</span></div>
             </section>
           </div>
         </div>
       </section>
 
-      <section id="workflow" class="section-head">
-        <span class="eyebrow">Workflow</span>
-        <h2>Built around the way a small team actually moves.</h2>
-        <p>Luvi keeps the project, team conversation, ownership, and next actions close together so the app feels less like admin work and more like a command surface.</p>
+      <section class="metrics reveal">
+        <article><strong>5</strong><span>core work modes</span></article>
+        <article><strong>0</strong><span>public source leaks</span></article>
+        <article><strong>1</strong><span>focused desktop app</span></article>
       </section>
 
-      <section class="features">
-        <article>
-          <span>01</span>
-          <h3>Project rooms</h3>
-          <p>Every project creates a dedicated chat group with a unique id, so decisions and files stay attached to the right workspace.</p>
-        </article>
-        <article>
-          <span>02</span>
-          <h3>Direct messages</h3>
-          <p>Open direct conversations with existing Luvi users and keep private coordination separate from project rooms.</p>
-        </article>
-        <article>
-          <span>03</span>
-          <h3>Task boards</h3>
-          <p>Kanban, list, and table views give managers quick control over priority, ownership, progress, and due work.</p>
-        </article>
-        <article>
-          <span>04</span>
-          <h3>Inbox requests</h3>
-          <p>Team invites arrive inside Luvi, and accepted users gain workspace access without loose external links.</p>
-        </article>
+      <section class="section-head reveal">
+        <span class="eyebrow">Product shape</span>
+        <h2>Luvi is built around manager speed, not busy dashboards.</h2>
+        <p>Boards, messages, requests, goals, and settings are separated into focused areas so each click has a clear job.</p>
       </section>
 
-      <section id="security" class="release-panel">
-        <div>
-          <span class="eyebrow">Release</span>
-          <h2>Closed-source distribution, no public source archives.</h2>
-          <p>GitHub automatically exposes source archives on tagged releases, so Luvi does not publish installer releases from this repository. This public repo exists only for the website.</p>
-        </div>
-        <div id="download" class="release-card">
-          <strong>Luvi 1.0.2</strong>
-          <span>Windows x64 installer</span>
-          <a class="primary" href="mailto:arishdevz@gmail.com?subject=Luvi%20installer%20request">Request installer</a>
-        </div>
+      <section class="card-grid reveal">
+        <a class="feature-card" href="./features.html"><span>01</span><h3>Feature system</h3><p>Boards, project rooms, DMs, inbox, goals, file previews, and settings.</p></a>
+        <a class="feature-card" href="./demo.html"><span>02</span><h3>Interactive demo</h3><p>Preview the actual Luvi flows with lightweight simulated app states.</p></a>
+        <a class="feature-card" href="./workflow.html"><span>03</span><h3>Workflow guide</h3><p>Understand project creation, team invites, transfer, and daily operation.</p></a>
+        <a class="feature-card" href="./security.html"><span>04</span><h3>Release policy</h3><p>Closed-source distribution with no GitHub source archives or public tags.</p></a>
       </section>
     </main>
 
+    <footer><span>Luvi</span><a href="./security.html">Closed-source policy</a><a href="./download.html">Installer access</a></footer>
     <script src="./script.js"></script>
   </body>
 </html>
